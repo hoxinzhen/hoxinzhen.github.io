@@ -328,8 +328,7 @@ PART 22222222
 }
 
 @media (min-width: 177.78vh) {  /* L R */
-    html{height: 100%;}
-    #contain { height: 100%; --height: 100%; width: calc(var(--height) * 16 / 9);}
+    #contain { height: 100dvh; width: calc(100dvh * 16 / 9);}
     #title{font-size: 9vh;}
     p{font-size: 2.2vh;}
     .pbol{font-size: 2.7vh;}
