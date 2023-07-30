@@ -28,6 +28,15 @@ section{
     align-items: center;
     scroll-snap-align: start;
 }
+P{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+.pbol{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #3f1b1e;
+}
 
 /* 
 PART 11111111 
@@ -160,15 +169,6 @@ PART 22222222
     background-image: url('img/background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-P{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2vw;
-}
-.pbol{
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: #3f1b1e;
 }
 
 #about.nonactive, #work.nonactive, #education.nonactive{
@@ -328,7 +328,7 @@ P{
 }
 
 @media (min-width: 177.78vh) {  /* L R */
-    #contain { height: 100vh; width: calc(100vh * 16 / 9);}
+    #contain { height: 100vh; max-height: -webkit-fill-available; width: calc(100vh * 16 / 9);}
     #title{font-size: 9vh;}
     p{font-size: 2.2vh;}
     .pbol{font-size: 2.7vh;}
@@ -385,4 +385,5 @@ P{
 }
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     .phone, .message, .rect{display: block;}
+    .collapse:after{margin-left: 9vh;}
 }
