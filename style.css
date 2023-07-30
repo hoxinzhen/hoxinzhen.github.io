@@ -258,7 +258,9 @@ PART 22222222
     padding: 3%;
     font-size: 1.3vw;
     border-radius: 2vw;
-    transition: all 0.2s ease-out;
+    transition: border-bottom-left-radius 0.2s ease-out;
+    transition: border-bottom-right-radius 0.2s ease-out;
+    transition: margin-left 0.2s ease-out;
     transition-delay: 0.2s;
     border: 0;
     margin-left: 5%;
@@ -328,6 +330,7 @@ PART 22222222
 }
 
 @media (min-width: 177.78vh) {  /* L R */
+    html{height: 100dvh;}
     #contain { height: 100dvh; width: calc(100dvh * 16 / 9);}
     #title{font-size: 9vh;}
     p{font-size: 2.2vh;}
@@ -336,7 +339,7 @@ PART 22222222
     .left h1{font-size: 4.5vh;}
     #worge::-webkit-scrollbar {width: 5.4vh; border-radius: 1.08vh;}
     .collapse{font-size: 2.34vh; border-radius: 3.6vh;}
-    .collapse:after{margin-left: 9vh !important;}
+    .collapse:after{margin-left: 9vh; transition: margin-left 0;}
     .bee:after{margin-left: 9vh;}
     .hide{border-radius: 3.6vh;}
     .bee {border-bottom-left-radius: 0%; border-bottom-right-radius: 0%;}
@@ -385,5 +388,4 @@ PART 22222222
 }
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     .phone, .message, .rect{display: block;}
-    .collapse:after{margin-left: 9vh;}
 }
