@@ -34,8 +34,10 @@ for (i = 0; i < collapse.length; i++) {
   });
 }
 
-// stars
-let stars = document.getElementById('star');
-window.addEventListener('scroll', ()=>{
-    
-})
+window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
+});
