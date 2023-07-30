@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Open+Sans&display=swap');
+:root {
+    --doc-height: 100%;
+}
 
 *{margin:0;padding:0; box-sizing: border-box; scroll-behavior: smooth;}
-body{background-color: rgb(0, 0, 0);}
+html, body{
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
 
 #contain { /* T B */
     width: 100vw; 
@@ -330,7 +339,6 @@ PART 22222222
 }
 
 @media (min-width: 177.78vh) {  /* L R */
-    html{height: 100dvh;}
     #contain { height: 100dvh; width: calc(100dvh * 16 / 9);}
     #title{font-size: 9vh;}
     p{font-size: 2.2vh;}
