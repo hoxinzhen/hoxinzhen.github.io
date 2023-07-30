@@ -326,18 +326,10 @@ PART 22222222
     padding-right: 8%;
     padding-bottom: 7%;
 }
-.bonk p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2vw;
-}
-.bonk.pbol{
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: #3f1b1e;
-}
 
 @media (min-width: 177.78vh) {  /* L R */
-    #contain { height: 100%; width: calc(100vh * 16 / 9);}
+    html{height: 100%;}
+    #contain { height: 100%; --height: 100%; width: calc(var(--height) * 16 / 9);}
     #title{font-size: 9vh;}
     p{font-size: 2.2vh;}
     .pbol{font-size: 2.7vh;}
