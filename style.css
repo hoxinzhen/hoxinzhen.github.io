@@ -12,6 +12,9 @@ html, body{
     height: 100%;
     overflow: hidden;
 }
+body{
+    position: fixed;
+}
 
 #contain { /* T B */
     width: 100vw; 
