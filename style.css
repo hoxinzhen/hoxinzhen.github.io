@@ -28,7 +28,7 @@ section{
     align-items: center;
     scroll-snap-align: start;
 }
-P{
+p{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2vw;
 }
@@ -326,9 +326,18 @@ PART 22222222
     padding-right: 8%;
     padding-bottom: 7%;
 }
+.bonk p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+.bonk.pbol{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #3f1b1e;
+}
 
 @media (min-width: 177.78vh) {  /* L R */
-    #contain { height: 100vh; max-height: -webkit-fill-available; width: calc(100vh * 16 / 9);}
+    #contain { height: 100%; width: calc(100vh * 16 / 9);}
     #title{font-size: 9vh;}
     p{font-size: 2.2vh;}
     .pbol{font-size: 2.7vh;}
@@ -336,7 +345,7 @@ PART 22222222
     .left h1{font-size: 4.5vh;}
     #worge::-webkit-scrollbar {width: 5.4vh; border-radius: 1.08vh;}
     .collapse{font-size: 2.34vh; border-radius: 3.6vh;}
-    .collapse:after{margin-left: 9vh;}
+    .collapse:after{margin-left: 9vh !important;}
     .bee:after{margin-left: 9vh;}
     .hide{border-radius: 3.6vh;}
     .bee {border-bottom-left-radius: 0%; border-bottom-right-radius: 0%;}
