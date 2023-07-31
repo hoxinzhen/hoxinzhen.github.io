@@ -270,15 +270,13 @@ PART 22222222
     padding: 3%;
     font-size: 1.3vw;
     border-radius: 2vw;
-    transition: border-bottom-left-radius 0.2s ease-out;
-    transition: border-bottom-right-radius 0.2s ease-out;
-    transition: margin-left 0.2s ease-out;
+    transition: all 0.2s ease-out;
     transition-delay: 0.2s;
     border: 0;
     margin-left: 5%;
     margin-top: 1%;
 }
-.collapse:after { 
+.collapse::after { 
     content: '\002B'; /* Unicode (+) */
     color: white;
     font-weight: bold;
@@ -292,7 +290,7 @@ PART 22222222
     padding-bottom: 10px;
     margin-left: 10%;
 }
-.bee:after {
+.bee::after {
     content: '\2212'; /* Unicode (-) */
     color: white;
     font-weight: bold;
@@ -350,8 +348,8 @@ PART 22222222
     .left h1{font-size: 4.5vh;}
     #worge::-webkit-scrollbar {width: 5.4vh; border-radius: 1.08vh;}
     .collapse{font-size: 2.34vh; border-radius: 3.6vh;}
-    .collapse:after{margin-left: 9vh; transition: margin-left 0;}
-    .bee:after{margin-left: 9vh;}
+    .collapse::after{margin-left: 9vh;}
+    .bee::after{margin-left: 9vh;}
     .hide{border-radius: 3.6vh;}
     .bee {border-bottom-left-radius: 0%; border-bottom-right-radius: 0%;}
     .hlink{font-size: 2.30vh; border-radius: 3.6vh;}
@@ -399,4 +397,11 @@ PART 22222222
 }
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     .phone, .message, .rect{display: block;}
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    #btn:hover{ content: url("img/arrow.png"); }
+    .tab:hover {
+        background-image: url('img/atab.png');
+    }
 }
